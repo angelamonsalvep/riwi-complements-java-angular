@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Settings - LogiFlow</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for webkit browsers */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #334155; 
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-50 antialiased overflow-hidden">
+<div class="flex h-screen w-full overflow-hidden">
+<!-- SideNavBar -->
+<aside class="w-72 bg-white dark:bg-[#1e293b] border-r border-slate-200 dark:border-slate-700 flex flex-col shrink-0 transition-all duration-300 z-20">
+<div class="flex items-center gap-3 px-6 py-6 border-b border-slate-100 dark:border-slate-800">
+<div class="bg-primary/10 rounded-lg p-2">
+<span class="material-symbols-outlined text-primary" style="font-size: 28px;">local_shipping</span>
+</div>
+<div class="flex flex-col">
+<h1 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">LogiFlow</h1>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium">Operational Dashboard</p>
+</div>
+</div>
+<nav class="flex-1 flex flex-col gap-2 p-4 overflow-y-auto">
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">dashboard</span>
+<span class="text-sm font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">inventory_2</span>
+<span class="text-sm font-medium">Shipments</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">group</span>
+<span class="text-sm font-medium">Clients</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">description</span>
+<span class="text-sm font-medium">Reports</span>
+</a>
+<div class="my-2 border-t border-slate-100 dark:border-slate-800"></div>
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg bg-primary/10 text-primary dark:bg-primary/20 dark:text-blue-400" href="#">
+<span class="material-symbols-outlined fill-current">settings</span>
+<span class="text-sm font-bold">Settings</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">help</span>
+<span class="text-sm font-medium">Help Center</span>
+</a>
+</nav>
+<div class="p-4 border-t border-slate-200 dark:border-slate-700">
+<div class="flex items-center gap-3 px-2 py-2">
+<div class="relative">
+<div class="size-10 rounded-full bg-slate-200 dark:bg-slate-700 bg-cover bg-center" data-alt="Profile picture of the current user" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZy_mPNVL667YLoCd872q_cVeXYSMmkz5Zg5VfbufM-ki5nzxsOB1atE3USVIi9uJyXE-RKXNlr7ZrMFMld9ql3m2eHjKk0ZGue_08WehLZhgQQ1ZEHSMJbosPOqVKLs4XmUzjggcneu6NQI7zisI4aLjkdoM9usyM2I12_0MfOWKKM05YLHQsLRoF_b4j_KfjoTZnLfej7gaDXuZWDwS6eIK0eQKTWkJDj4HQ3tUbFoCFOXs_9jYkQVN2yjfEf0q-Z1v285ADcc8b");'></div>
+<div class="absolute bottom-0 right-0 size-3 bg-green-500 rounded-full border-2 border-white dark:border-[#1e293b]"></div>
+</div>
+<div class="flex flex-col overflow-hidden">
+<p class="text-sm font-semibold text-slate-900 dark:text-white truncate">Alex Morgan</p>
+<p class="text-xs text-slate-500 dark:text-slate-400 truncate">alex@logiflow.com</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col h-full overflow-hidden bg-background-light dark:bg-background-dark relative">
+<!-- TopNavBar -->
+<header class="h-16 bg-white dark:bg-[#1e293b] border-b border-slate-200 dark:border-slate-700 flex items-center justify-between px-8 shrink-0 z-10">
+<div class="flex items-center gap-4">
+<nav class="flex items-center text-sm font-medium text-slate-500 dark:text-slate-400">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-slate-400 text-sm mx-2">chevron_right</span>
+<span class="text-slate-900 dark:text-white font-semibold">Settings</span>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative w-64 hidden md:block">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-slate-400 text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-slate-50 dark:bg-slate-800 border-none rounded-lg text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:ring-2 focus:ring-primary/50 outline-none" placeholder="Search settings..." type="text"/>
+</div>
+<button class="relative p-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 size-2 bg-red-500 rounded-full border border-white dark:border-[#1e293b]"></span>
+</button>
+</div>
+</header>
+<!-- Scrollable Content -->
+<div class="flex-1 overflow-y-auto p-6 md:p-10">
+<div class="max-w-5xl mx-auto flex flex-col gap-8 pb-20">
+<!-- Page Heading -->
+<div class="flex flex-col gap-1">
+<h2 class="text-3xl font-black text-slate-900 dark:text-white tracking-tight">Settings</h2>
+<p class="text-slate-500 dark:text-slate-400 text-lg">Manage your account settings and operational preferences.</p>
+</div>
+<!-- Settings Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- General Settings Card -->
+<div class="lg:col-span-7 flex flex-col gap-6 bg-white dark:bg-[#1e293b] rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 p-6">
+<div class="flex items-center gap-3 pb-4 border-b border-slate-100 dark:border-slate-700">
+<span class="material-symbols-outlined text-primary">tune</span>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">General Settings</h3>
+</div>
+<!-- Language Select -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300" for="language">System Language</label>
+<div class="relative">
+<select class="w-full appearance-none bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-600 text-slate-900 dark:text-white text-sm rounded-lg focus:ring-primary focus:border-primary block p-3 pr-10" id="language">
+<option selected="" value="en">English (US)</option>
+<option value="es">Español</option>
+<option value="fr">Français</option>
+<option value="de">Deutsch</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-slate-500">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+<p class="text-xs text-slate-500 dark:text-slate-500">This will change the interface language for your dashboard.</p>
+</div>
+<!-- Timezone Select -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300" for="timezone">Timezone</label>
+<div class="relative">
+<select class="w-full appearance-none bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-600 text-slate-900 dark:text-white text-sm rounded-lg focus:ring-primary focus:border-primary block p-3 pr-10" id="timezone">
+<option value="utc-8">Pacific Time (US &amp; Canada) (UTC-08:00)</option>
+<option selected="" value="utc-5">Eastern Time (US &amp; Canada) (UTC-05:00)</option>
+<option value="utc+0">London (UTC+00:00)</option>
+<option value="utc+1">Paris (UTC+01:00)</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-slate-500">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Notifications Toggle -->
+<div class="flex items-center justify-between py-2">
+<div class="flex flex-col gap-1">
+<span class="text-sm font-semibold text-slate-900 dark:text-white">Email Notifications</span>
+<span class="text-xs text-slate-500 dark:text-slate-400">Receive daily summaries of shipment statuses.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-slate-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary/20 dark:peer-focus:ring-primary/30 rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Maintenance Mode Toggle -->
+<div class="flex items-center justify-between py-2">
+<div class="flex flex-col gap-1">
+<span class="text-sm font-semibold text-slate-900 dark:text-white">Beta Features</span>
+<span class="text-xs text-slate-500 dark:text-slate-400">Enable experimental features in your dashboard.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-slate-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary/20 dark:peer-focus:ring-primary/30 rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<!-- User Preferences Card -->
+<div class="lg:col-span-5 flex flex-col gap-6 bg-white dark:bg-[#1e293b] rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 p-6 h-fit">
+<div class="flex items-center gap-3 pb-4 border-b border-slate-100 dark:border-slate-700">
+<span class="material-symbols-outlined text-primary">person</span>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Profile Information</h3>
+</div>
+<div class="flex items-center gap-4 py-2">
+<div class="size-16 rounded-full bg-slate-200 dark:bg-slate-700 bg-cover bg-center" data-alt="Large profile picture of the current user" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAqgimMVFbdOcc4G7XBR0VJRfZs8KhWzwvOH0NDw0upFrPG-BPXZfHRHKA193Drij3bWtZz6Uy8vc88MvovNwI0107bcz5JNDboRtxoOg2-v189kqRk6aEaZnjV3R_-QASnyeBfqRcVZuqUyGsR0YTqqshQgCou2mKyuzLEzgpG1913Cy94lAjXDIoXLydlM7mpe0VxtdY-eY7dwYSYukpHrzAIxVm48KelNUY7nYxEivTrSxkMbNh6DEMXuaxWakfNlUGToaeRR3Z-");'></div>
+<div class="flex flex-col">
+<button class="text-sm font-medium text-primary hover:text-blue-600 hover:underline">Change Avatar</button>
+<p class="text-xs text-slate-500">JPG, GIF or PNG. Max 1MB.</p>
+</div>
+</div>
+<!-- Name Input -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300" for="fullname">Full Name</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<span class="material-symbols-outlined text-slate-400 text-[20px]">badge</span>
+</div>
+<input class="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-600 text-slate-900 dark:text-white text-sm rounded-lg focus:ring-primary focus:border-primary block w-full pl-10 p-3" id="fullname" placeholder="John Doe" type="text" value="Alex Morgan"/>
+</div>
+</div>
+<!-- Email Input (Disabled/Readonly) -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300" for="email">Email Address</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<span class="material-symbols-outlined text-slate-400 text-[20px]">mail</span>
+</div>
+<input class="bg-slate-100 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-500 text-sm rounded-lg block w-full pl-10 p-3 cursor-not-allowed" disabled="" id="email" type="email" value="alex@logiflow.com"/>
+</div>
+</div>
+<!-- Role Input (Disabled/Readonly) -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300" for="role">Role</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<span class="material-symbols-outlined text-slate-400 text-[20px]">security</span>
+</div>
+<input class="bg-slate-100 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-500 text-sm rounded-lg block w-full pl-10 p-3 cursor-not-allowed" disabled="" id="role" type="text" value="Logistics Manager"/>
+</div>
+</div>
+<div class="pt-2">
+<button class="flex items-center justify-center w-full px-4 py-3 border border-slate-200 dark:border-slate-600 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors font-medium text-sm gap-2">
+<span class="material-symbols-outlined text-[18px]">lock_reset</span>
+                                    Update Password
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Footer Actions -->
+<div class="bg-white dark:bg-[#1e293b] border-t border-slate-200 dark:border-slate-700 p-4 md:px-10 flex items-center justify-end gap-3 shrink-0 z-10">
+<button class="px-5 py-2.5 rounded-lg text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                    Cancel
+                </button>
+<button class="px-5 py-2.5 rounded-lg text-sm font-bold text-white bg-primary hover:bg-blue-600 shadow-md shadow-blue-500/20 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">save</span>
+                    Save Changes
+                </button>
+</div>
+</main>
+</div>
+</body></html>
