@@ -1,0 +1,297 @@
+<div class="max-w-7xl mx-auto flex flex-col gap-6">
+<!-- Page Title & Quick Stats -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+<div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">Dashboard Overview</h2>
+<p class="text-slate-500 dark:text-slate-400 mt-1">Real-time logistic metrics and fleet status.</p>
+</div>
+<div class="text-sm text-slate-500 flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span>Last updated: Just now</span>
+</div>
+</div>
+<!-- KPI Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Card 1 -->
+<div class="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Total Active Shipments</p>
+<div class="p-1.5 bg-blue-50 dark:bg-blue-900/20 rounded-md text-primary">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">1,240</h3>
+<span class="text-xs font-medium text-emerald-600 bg-emerald-50 dark:bg-emerald-900/20 px-1.5 py-0.5 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> 5%
+                                </span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">In Transit</p>
+<div class="p-1.5 bg-indigo-50 dark:bg-indigo-900/20 rounded-md text-indigo-600">
+<span class="material-symbols-outlined text-[20px]">near_me</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">845</h3>
+<span class="text-xs font-medium text-emerald-600 bg-emerald-50 dark:bg-emerald-900/20 px-1.5 py-0.5 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> 12%
+                                </span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Exceptions</p>
+<div class="p-1.5 bg-red-50 dark:bg-red-900/20 rounded-md text-red-600">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">12</h3>
+<span class="text-xs font-medium text-red-600 bg-red-50 dark:bg-red-900/20 px-1.5 py-0.5 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_down</span> 2%
+                                </span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Revenue (MTD)</p>
+<div class="p-1.5 bg-emerald-50 dark:bg-emerald-900/20 rounded-md text-emerald-600">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">$450k</h3>
+<span class="text-xs font-medium text-emerald-600 bg-emerald-50 dark:bg-emerald-900/20 px-1.5 py-0.5 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> 8%
+                                </span>
+</div>
+</div>
+</div>
+<!-- Charts & Map Section -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Chart Column -->
+<div class="lg:col-span-2 flex flex-col gap-6">
+<!-- Volume Chart -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-6 flex flex-col h-full">
+<div class="flex items-center justify-between mb-6">
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Shipment Volume by Region</h3>
+<p class="text-sm text-slate-500">Last 30 Days Performance</p>
+</div>
+<button class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+</div>
+<div class="flex-1 min-h-[200px] flex items-end justify-around gap-4 pb-2">
+<!-- Bar 1 -->
+<div class="flex flex-col items-center gap-2 group w-full">
+<div class="w-full max-w-[60px] bg-blue-100 dark:bg-blue-900/30 rounded-t-sm h-32 relative group-hover:bg-blue-200 transition-colors">
+<div class="absolute bottom-0 w-full bg-primary rounded-t-sm h-[75%]"></div>
+</div>
+<span class="text-xs font-medium text-slate-500">North</span>
+</div>
+<!-- Bar 2 -->
+<div class="flex flex-col items-center gap-2 group w-full">
+<div class="w-full max-w-[60px] bg-blue-100 dark:bg-blue-900/30 rounded-t-sm h-40 relative group-hover:bg-blue-200 transition-colors">
+<div class="absolute bottom-0 w-full bg-primary rounded-t-sm h-[90%]"></div>
+</div>
+<span class="text-xs font-medium text-slate-500">South</span>
+</div>
+<!-- Bar 3 -->
+<div class="flex flex-col items-center gap-2 group w-full">
+<div class="w-full max-w-[60px] bg-blue-100 dark:bg-blue-900/30 rounded-t-sm h-24 relative group-hover:bg-blue-200 transition-colors">
+<div class="absolute bottom-0 w-full bg-primary rounded-t-sm h-[50%]"></div>
+</div>
+<span class="text-xs font-medium text-slate-500">East</span>
+</div>
+<!-- Bar 4 -->
+<div class="flex flex-col items-center gap-2 group w-full">
+<div class="w-full max-w-[60px] bg-blue-100 dark:bg-blue-900/30 rounded-t-sm h-28 relative group-hover:bg-blue-200 transition-colors">
+<div class="absolute bottom-0 w-full bg-primary rounded-t-sm h-[65%]"></div>
+</div>
+<span class="text-xs font-medium text-slate-500">West</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Map Widget -->
+<div class="lg:col-span-1 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-0 overflow-hidden flex flex-col h-[350px] lg:h-auto">
+<div class="p-4 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center bg-white dark:bg-slate-900 z-10 relative">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Live Fleet Overview</h3>
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+</span>
+</div>
+<div class="relative flex-1 bg-slate-100">
+<div class="w-full h-full bg-center bg-cover object-cover opacity-80" data-alt="Stylized map showing truck routes across North America" data-location="USA" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC5VPsb2aS7gKQJyxgrEnuEvYbnboZk8sS-bzl6ifIsZNXUjuJXPquNYiDZpIlKPiDitWAW3EuWue8XDCrLsPq11aRLuRuwb6n1BwUEP9om8gRI4Fc-yxvnalxinbr2-v5KXuXMIeKHB8mqOXIYBoFTjZDv8O9U-Onfe4q4LMWoE-Ld_viTu2SY3w-kDMofnyuWvxRLwmW1_z4GHwgw33drni6q51j9Gg9gnR8QIiHzPkScGHR67ItZTLtUIVwHrw7LXTGBBG5MTWPl");'></div>
+<!-- Map Overlay Elements -->
+<div class="absolute top-1/3 left-1/4">
+<div class="relative group cursor-pointer">
+<div class="bg-primary text-white p-1 rounded-full shadow-lg transform transition-transform hover:scale-110">
+<span class="material-symbols-outlined text-[16px] block">local_shipping</span>
+</div>
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                                            Truck #402 - Moving
+                                        </div>
+</div>
+</div>
+<div class="absolute top-1/2 right-1/3">
+<div class="relative group cursor-pointer">
+<div class="bg-orange-500 text-white p-1 rounded-full shadow-lg transform transition-transform hover:scale-110">
+<span class="material-symbols-outlined text-[16px] block">local_shipping</span>
+</div>
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                                           Truck #119 - Delayed
+                                       </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Recent Shipments Table -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+<div class="p-6 border-b border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Recent Shipments</h3>
+<div class="flex gap-2">
+<button class="px-3 py-1.5 text-sm font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">Filter</button>
+<button class="px-3 py-1.5 text-sm font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">Export</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50">
+<th class="px-6 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider">Tracking ID</th>
+<th class="px-6 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider">Customer</th>
+<th class="px-6 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider">Route</th>
+<th class="px-6 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider">ETA</th>
+<th class="px-6 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider">Status</th>
+<th class="px-6 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+<!-- Row 1 -->
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors group">
+<td class="px-6 py-4 text-sm font-medium text-primary">#SHP-2049</td>
+<td class="px-6 py-4 text-sm text-slate-900 dark:text-slate-200">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full bg-slate-200 bg-cover" data-alt="Company logo placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPsCuPGq8LkRZ8shnNtr6S9ArCLdWS5GMM2Gy-et4drIPg3_mUk6DpiRo_hSqvQhCkymDbtDO8VQkIbMFqslXsqKphYTeb7IMwPhkuH5v0o7sjHyzIDZuyqc32LiZN5sVmKr89b-2ztvzi8IorIuVRi3aT08P18ydE61gF5VFK2Erak_5EE1d3v8t1pvzktC1uDVLS-PiUKWKgoMY5HwiEbJGtM3N-B6GFzg_FEWYJS-cwn9BU2HEknapgQj4_nFaYVpP4N4-STMsA");'></div>
+                                                Acme Corp
+                                            </div>
+</td>
+<td class="px-6 py-4 text-sm text-slate-600 dark:text-slate-400">NY → LA</td>
+<td class="px-6 py-4 text-sm text-slate-600 dark:text-slate-400">Oct 24, 2023</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-indigo-50 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-800">
+<span class="size-1.5 rounded-full bg-indigo-500"></span> In Transit
+                                            </span>
+</td>
+<td class="px-6 py-4 text-right">
+<button class="text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors group">
+<td class="px-6 py-4 text-sm font-medium text-primary">#SHP-2050</td>
+<td class="px-6 py-4 text-sm text-slate-900 dark:text-slate-200">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full bg-slate-200 bg-cover" data-alt="Company logo placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtuXnWdpv_TMa8g4eRFtGsXyYGaux8vtzyBsoYiprhANEo0ntYuHndzaofpyhKWs0cdZQbRXem54n9rWzwtyv6WE18Ae5qbMbQpDJg8en8NsmPGb8GADfyiPyU79_xN9vvdF9zZogXdAX9DMq0vsray-S4_OwkwrTGiiRyRV3r6GbyGKAr_ZtmTEzHVey8lRLxL-y2qBAd-Goo3OdHZNJu_CI3H-DRbkohw0wHaWDBI11aSeRFgLHJljymqgPGgFToxB7eoi6ve0Ns");'></div>
+                                                Globex Inc
+                                            </div>
+</td>
+<td class="px-6 py-4 text-sm text-slate-600 dark:text-slate-400">TX → FL</td>
+<td class="px-6 py-4 text-sm text-slate-600 dark:text-slate-400">Oct 25, 2023</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300 border border-emerald-100 dark:border-emerald-800">
+<span class="size-1.5 rounded-full bg-emerald-500"></span> Delivered
+                                            </span>
+</td>
+<td class="px-6 py-4 text-right">
+<button class="text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors group">
+<td class="px-6 py-4 text-sm font-medium text-primary">#SHP-2051</td>
+<td class="px-6 py-4 text-sm text-slate-900 dark:text-slate-200">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full bg-slate-200 bg-cover" data-alt="Company logo placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAo0N1pOUt73J4QFU7lyRpupQDWSudBmTFt7Nz0t3r84jfFeaRcZ3ue0y7snGCo0wkkvEKU0HwwcBLUdE8dxzES6cjThDPUVPf2ySgB04YXKFXvPj74MG7IfOd2qeji8vt9za8NuHkA9T2vaYmjvNDj1xTD2TzbcuG-LoGAULbZ7A9JhHkWImez0sgm4q20O2mGxyQej1qPbfrNj_td_SDGylwnNud1J2xzKQ27VyMLire3e4M-J_2X1UhBwd3VpKkt-S7LB38Ekxcb");'></div>
+                                                Soylent Corp
+                                            </div>
+</td>
+<td class="px-6 py-4 text-sm text-slate-600 dark:text-slate-400">WA → OR</td>
+<td class="px-6 py-4 text-sm text-slate-600 dark:text-slate-400">Oct 26, 2023</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-orange-50 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300 border border-orange-100 dark:border-orange-800">
+<span class="size-1.5 rounded-full bg-orange-500"></span> Delayed
+                                            </span>
+</td>
+<td class="px-6 py-4 text-right">
+<button class="text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors group">
+<td class="px-6 py-4 text-sm font-medium text-primary">#SHP-2052</td>
+<td class="px-6 py-4 text-sm text-slate-900 dark:text-slate-200">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full bg-slate-200 bg-cover" data-alt="Company logo placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA89WdK_dGZrk1AQiqDniKFCVbrhjjbavC4o0BZB6N6OS_nx0gxpX1W70qsgxbHKb02oJaTVF_OA0Q_tYiN_eTakC959NBE7WL_cPJYK2EPOHRNcmG7dYb1KMHImMaQ49I24bfns_UYs7YjjrR0lJ9-PLH3xL210yw4OOe5jqq2Dzfp9O6wdQebdr4T1FpYoyDnQx2jZAnU5M2G_vv0ahwlg_1DojYQAeb_CNLFxK93lj-zDnMHZXR9fF0ohyrdljd2NDdDXBX8idEE");'></div>
+                                                Initech
+                                            </div>
+</td>
+<td class="px-6 py-4 text-sm text-slate-600 dark:text-slate-400">IL → MI</td>
+<td class="px-6 py-4 text-sm text-slate-600 dark:text-slate-400">Oct 24, 2023</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-indigo-50 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-800">
+<span class="size-1.5 rounded-full bg-indigo-500"></span> In Transit
+                                            </span>
+</td>
+<td class="px-6 py-4 text-right">
+<button class="text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors group">
+<td class="px-6 py-4 text-sm font-medium text-primary">#SHP-2053</td>
+<td class="px-6 py-4 text-sm text-slate-900 dark:text-slate-200">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full bg-slate-200 bg-cover" data-alt="Company logo placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6JYUh3-OMdAvR_Yt1UTGPNA7WnysIuRhuDuZBBo90lKaQ1YoOjSRx9z_mYvBfuXB0cmqrbf1GM6zCp_9s0BOa0k8YLvgO-sla19hHUdG6LyAZ72Xq4Cm_pPyseIme_yHedUv5jfaP1C75ideLru9GN-R-R0ATAbXb0vg-0H9AofJBIO0SGi2dJjtADhZlYBuP80EBrU6PApK_UpfzXxEEE-A-WEAt79KTn7T_bP8zS7QPLUFnJbpYu7XMgaK0lM8FGKGqEyyXKz41");'></div>
+                                                Massive Dynamic
+                                            </div>
+</td>
+<td class="px-6 py-4 text-sm text-slate-600 dark:text-slate-400">MA → NY</td>
+<td class="px-6 py-4 text-sm text-slate-600 dark:text-slate-400">Oct 23, 2023</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-red-50 text-red-700 dark:bg-red-900/30 dark:text-red-300 border border-red-100 dark:border-red-800">
+<span class="size-1.5 rounded-full bg-red-500"></span> Exception
+                                            </span>
+</td>
+<td class="px-6 py-4 text-right">
+<button class="text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-4 border-t border-slate-100 dark:border-slate-800 flex justify-center">
+<button class="text-sm font-medium text-primary hover:text-blue-700 dark:hover:text-blue-400 transition-colors">View All Shipments</button>
+</div>
+</div>
+</div>
