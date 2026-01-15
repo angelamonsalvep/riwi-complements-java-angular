@@ -9,5 +9,20 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('logiflow-frontend');
+  nombre = signal('Carlos');
+  nuevaSkill = signal('');
+  skills = signal(['Angular', 'TypeScript']);
+
+  actualizarSkill(event: Event) {
+    const value = (event.target as HTMLInputElement).value;
+    this.nuevaSkill.set(value);
+  }
+
+  agregarSkill() {
+    if (this.nuevaSkill().trim()) {
+      this.skills.update(list => [...list, this.nuevaSkill()]);
+      this.nuevaSkill.set('');
+    }
+  }
   
 }

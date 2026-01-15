@@ -12,6 +12,6 @@ export class Character {
   ) {}
 
   getVida(): number {
-    return this.vida;
+    return this.life;
   }
 }
