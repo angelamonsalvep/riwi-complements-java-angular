@@ -1,0 +1,7 @@
+{
+  "name": "angular-signals-ejercicio",
+  "private": true,
+  "scripts": {
+    "start": "ng serve"
+  }
+}

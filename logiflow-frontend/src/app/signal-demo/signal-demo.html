@@ -1,0 +1,16 @@
+<h2>🧪 Ejercicio Signals</h2>
+
+<input
+  placeholder="Escribe tu nombre"
+  [value]="nombre()"
+  (input)="nombre.set($any($event.target).value)"
+/>
+
+<button (click)="limpiar()">Limpiar</button>
+
+@if (nombre()) {
+<p>Hola {{ nombre() }}</p>
+<p>En mayúscula: {{ nombreMayus() }}</p>
+}@else {
+    <p>Por favor escribe tu nombre</p>
+}
